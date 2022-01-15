@@ -1,0 +1,58 @@
+1.  Inicio
+2.  funcion principal()
+3.  	tipo, i[1-n]
+4.	mensaje,x(200)[{a-z},{A-Z},{0-9},{BS}]
+5. 	Escribir "Ingrese 1 para ingresar autos o ingrese 2 para ingresar motos"
+6.	Lea tipo
+7.	Si (tipo == 1) entonces
+8.		mensaje=ingrearVehiculo
+9.	de lo contrario
+10.		Si(tipo==2)entonces
+11.			mensaje=ingrearMoto
+12.		de lo contrario
+13.			mensaje = "opcion incorrecta"
+14.		Fin si
+15.	Fin si
+16.	Escribir mensaje
+17.  Fin funcion principal
+18.  funcion ingresarAuto()
+19.  	marca, x(200)[{a-z}{A-Z}{BS}]
+20.	añoFabricacion, i[1-n]
+21.	cadena, x(200)[{a-z}{A-Z}{0-9}]
+22.	salida x[{A-Z},{a-z},´{}{BS}
+23.	bandera=true
+24.	Haga hasta
+25.		Escribir"Ingrese la marca del vehiculo"
+26.		Lea marca
+27.		Escribir"Ingrese el año de fabricacion"
+28.		Lea añoFabricacion
+29.		Escribir"Ingrese SI para salir"
+30.		Lea salida
+31.		Si(salida==si or SI or sI or Si)
+32.			bandera = falsse
+33.		Fin si
+34.		cadena = "Auto marca",marca "con año de fabricación",añoFabricacion
+34. 	Fin haga hasta (bandera)
+35.	retornar cadena
+36.	fin funcion ingresarAuto()
+37.  funcion ingresarMoto
+38.	motor, x(200)[{a-z}{A-Z}{BS}]
+39.	nAsientos, i[1-n]
+40.	cadena, x(200)[{a-z}{A-Z}{0-9}]
+41.	salida x[{A-Z},{a-z},´{}{BS}
+42.	bandera=true
+43.	Haga hasta
+44.		Escribir"Ingrese el tipo de motor de la moto"
+45.		Lea motor
+46.		Escribir"Ingrese el numero de asientos de la moto"
+47.		Lea nAsientos
+48.		Escribir"Ingrese SI para salir"
+49.		Lea salida
+50.		Si(salida==si or SI or sI or Si)
+51.			bandera = falsse
+52.		Fin si
+53.		cadena = "Moto con motor a",motor "y",nAsientos"asientos"
+54. 	Fin haga hasta (bandera)
+55.	retornar cadena
+56.	fin funcion ingresarMoto()
+57.  Fin

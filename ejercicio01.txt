@@ -1,0 +1,24 @@
+1.  funcion principal()
+2.  	arreglo1(4), i[0-n] <-- {1, 	2, 	5, 	6}
+3.  	arreglo2(4), i[0-n] <-- {9, 	8, 	7, 	1}
+4.  	arreglo3(4), i[0-n] <-- {10, 	18, 	17, 	10}
+5.	indiceA1,i[1-n]
+6.	indiceA2,i[1-n]
+7.	indiceA3,i[1-n]
+8.	Para(indiceA1<--0,indiceA1<5,1)haga// genero un contador para recorrer el arreglo
+9.		Para(indice12<--0, indiceA2<5, 1) haga
+10.			Para(indiceA3<--0, indiceA3<5, 1) haga
+11.				generarInformacion(arreglo1,arreglo2,arreglo3)
+//llamo a la funcion para que trabaje con cada uno de los numeros del arreglo al llamar la funcion
+12.			fin para
+13.		fin para
+14.	fin para
+15. fin funcion principal
+16. funcion generarInformacion(a, i;b, i;c, i)
+17. 	mensaje,x[{a-z},{A-Z},{0-9},{,},{:}]<--" "
+18. 	m<-- (a**2 + b ** 2) + a*c
+19.	mensaje<--"El valor de m es %d"+m"y los valores usados par la operacion son:%d, %d, %d"
++a[indiceA1]+b[indiceA2]+c[indiceA3]
+20. 	Escribir (mensaje)	
+21.  fin funcion generarInformacion
+22. Fin
